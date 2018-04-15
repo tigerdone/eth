@@ -1,28 +1,31 @@
 
 // var dom1 = document.getElementsByClassName('head_content')
-// var main_head = document.getElementById('main_head')
-
+var head_bg = document.getElementById('ball_nebula')
+var left = head_bg.style.left
+console.log(left)
 // document.addEventListener("wheel", myFunction);
 window.onscroll = function() {
     console.info(window.scrollY);
 
-    // var h11 = window.pageXOffset;
-    var h12 = window.scrollY;
-    console.log('h12:'+h12);
+    var scrollY = window.scrollY;
+    var alpha = 1 - scrollY/400;
+    var width_reduce = scrollY/4*3;
+    var height_reduce = width_reduce/2;
+    var refer_reduce = height_reduce*5/7;
 
-    if(h12 > 0){
-        var alpha = 1 - h12/280;
-        console.log('alpha:'+alpha);
-        console.log('h12:'+h12);
+    console.log('h12:'+scrollY);
 
-        if(alpha<0){
-            alpha = 0
-        }
-        $(document).ready(function(){
-            $("#main_head").fadeTo(30,alpha);
-        });
+    // console.log('alpha:'+alpha);
+    // console.log('h12:'+h12);
+    //506为不动点，1440*717高度
+    if(alpha<0){
+        alpha = 0
     }
-    // console.log('window.pageXOffset'+h11);
-    // console.log('window.pageYOffset'+h12);
+    $(document).ready(function(){
+        $("#main_head").fadeTo(30,alpha);
+        $("#ball_nebula").animate({left: -135+width_reduce/2+'px', top: -10 + refer_reduce +'px', width: (1201-width_reduce)+'px'},20);
+        // $("#ball_nebula").animate({top: -35+'px'},2000);
+    });
+
 }
 
