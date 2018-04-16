@@ -5,9 +5,12 @@
     <title>secbit</title>
     <link rel="stylesheet" href="css/base.css" type="text/css">
     <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
     <link rel="icon" href="http://oxhbygzr8.bkt.clouddn.com/favicon.ico" type="image/x-icon">
 
-    <script src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.rotate.min.js"></script>
+
 </head>
 <body>
 <header>
@@ -67,7 +70,7 @@
     </div>
 </div>
 <div class="bg_content">
-    <div class="main main_content1">
+    <div class="main_content1">
         <div class="main_container">
             <div class="content1_left">
                 <h4>
@@ -77,16 +80,18 @@
                     The security of smart contracts is of great importance to a healthy Ethereum ecosystem. However, it is not a trivial task to develop secure smart contacts using languages such as Solidity, due to their inherent issues and vulnerabilities. We present SECBIT, a framework that could fundamentally change smart contract security landscape. Backed by the full strength of formal specifications and mathematical proofs, SECBIT incorporates three levels of auditing services to address all aspects of security issues in smart contracts.
                 </h5>
             </div>
-            <div class="content1_right">
-                <img id="content1_img1" src="images/animate1_01.png" alt="animate1_05.png">
-                <img id="content1_img2" src="images/animate1_02.png" alt="animate1_06.png">
-                <img id="content1_img3" src="images/animate1_03.png" alt="animate1_07.png">
-                <img id="content1_img4" src="images/animate1_04.png" alt="animate1_08.png">
+            <div id="rotate" class="content1_right">
+                <img src="images/animate1_04.png" alt="animate1_08.png">
                 <img id="content1_img5" src="images/animate1_05.png" alt="animate1_09.png">
+                <div id="img_bg" class="img_bg">
+                    <img id="content1_img1" src="images/animate1_01.png" alt="animate1_05.png">
+                    <img id="content1_img2" src="images/animate1_02.png" alt="animate1_06.png">
+                    <img id="content1_img3" src="images/animate1_03.png" alt="animate1_07.png">
+                </div>
             </div>
         </div>
     </div>
-    <div class="main main_content2">
+    <div class="main_content2">
         <div class="main_container">
             <div class="content1_left">
                 <h4>
@@ -102,7 +107,7 @@
             </div>
         </div>
     </div>
-    <div class="main main_content3">
+    <div class="main_content3">
         <div class="main_container">
             <div class="content3_left">
                 <img src="images/console.gif" alt="console.gif">
@@ -123,7 +128,7 @@
             </div>
         </div>
     </div>
-    <div class="main main_content4">
+    <div class="main_content4">
         <div class="main_container">
             <div class="content4_left">
                 <h4>
@@ -139,7 +144,7 @@
             </div>
         </div>
     </div>
-    <div class="main main_img">
+    <div class="main_img">
         <div class="main_img_container">
             <h1>
                 R&D TEAM
@@ -207,7 +212,7 @@
 
         </div>
     </div>
-    <div class="main main_tail">
+    <div class="main_tail">
         <div class="main_tail_container">
             <h1>
                 PARTNERS
@@ -228,7 +233,7 @@
         </h1>
     </footer>
 </div>
-<script src="js/animate1.js"></script>
+<script type="text/javascript" src="js/animate1.js"></script>
 
 </body>
 </html>
